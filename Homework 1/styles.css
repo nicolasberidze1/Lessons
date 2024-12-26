@@ -1,0 +1,69 @@
+body{position:fixed;  width:100%;     height:800px;   background-repeat: no-repeat;   background-size: cover;    background-image: url(https://c4.wallpaperflare.com/wallpaper/439/57/126/life-wallpaper-preview.jpg); margin:0px;}
+.center{width: 1300px; margin-left:  0.2%;}
+.content{margin-top:30px;  width:100%;  }
+.contentscroll{height:auto;  overflow-y: auto;    }
+ul{text-decoration: none; list-style-type: none;}
+li{text-decoration: none;}
+h1{color:rgb(0, 162, 255);}
+.wall{position:absolute; padding: 5px;  height:5px; width:100%; background:red;  top:5%;   }
+a{color:#fff;  list-style-type: none;   text-decoration: none;  font-size:19px;}
+button{ color:#000; width:79px;}
+.search{position:absolute;  top:0;  left:100%; }
+.episodes{display: flex; margin-left:-170px; }
+.flex-container{display: flex;  }
+.search{width:300px;    height:70px; margin-top:25px;  }
+input{background:#000; color:orangered:  list-style-type: none;  padding:5px;}
+::placeholder{color:red;}
+.search button{background-color: red;  padding: 10px 10px;}
+.header {
+    position:relative;
+    background: linear-gradient(90deg, rgb(66, 0, 107) 8%, rgba(4,0,6,1) 100%);
+    padding:13px;
+     width: 100%; 
+     height:180px;  
+     }
+     
+.logo{margin-left: 25px;  }
+.logo span{position:relative; font-size:42px; color: orangered; top: -10px;}    
+.logo h2{font-size: 35px;   position:relative;top:-50px; right:10px;  color:#ccc;} 
+.headermenu {position:absolute;    width:500px;height:50px;  top:0; margin-top:1px; left:10%;}
+.ul-menu  { color:orangered;  font-size:29px;}
+.ul-menu  ul  {  width:100%;}
+.ul-menu  li   {}
+.wrap {position:fixed;margin-left:0%; top:11%; position:absolute;     
+    width:500%;   
+    height:500%;    
+    background: linear-gradient(90deg, rgba(83,4,73,0.865983893557423) 8%, rgba(87,0,144,0.7371323529411764) 100%);
+}
+
+
+/* short */
+.titlecontainer{width:500px;  position:absolute;    top:6.7%; overflow:hidden; }
+.postertitle{position:relative;; padding:5px; width:160px;    height:60px;    background: linear-gradient(90deg, rgba(31,29,30,0.8491771708683473) 0%, rgba(0,0,0,0.7371323529411764) 100%);}
+.imdb{background-color: orangered; padding:5px; position:absolute;}
+.imdbnum{position:absolute; background-color: #000; padding:5px;    margin-left:55px;  color:#fff;}
+.arrow{font-size:35px; }
+.leftarrow{position:absolute;   height:26px; padding:21px 25px;  margin-left:-22px; background-color: orangered;  margin-top:140px;}
+.rightarrow{position:absolute;   height:26px; padding:21px 25px;  background-color: orangered;  margin-top:140px;right:0;}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

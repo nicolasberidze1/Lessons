@@ -1,0 +1,55 @@
+.arcane-section{
+    width: 100%;
+    min-height: 579px;
+    background-color: #131D24;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    font-family: IM FELL English;
+}
+.arcane-section-cards{
+    width: 80vw; 
+    height: 500px;
+    margin-top:2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:100px;
+
+}
+
+.card{
+    width: 237px;
+    height: 150px;
+
+}
+.card h1{
+    color: #EEF4F8;
+    font-size: 24px;
+    font-weight: 400;
+}
+.card p {
+    font-size:17px;
+    color: #586061;
+}
+
+.card h2{
+    color:#79969C
+}
+.card-border{
+    width: 1px;
+    height: 379px;
+    background-color: #232D33;
+}
+
+.icons span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size:cover;
+    background-image: url(/images/icon.png);
+    border-radius: 50%;
+    margin: 0 3px;
+}
+

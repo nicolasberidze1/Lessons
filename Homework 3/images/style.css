@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: rgb(0, 0, 0);
+    overflow-x:hidden;
+}
+
+header{
+    background-color: #000000; 
+    padding:25px;
+    border-bottom: solid  orangered; 
+}
+
+
+
+
+.logo-img{
+    
+    height:50px;
+
+}
+
+
+
+
+
+li{ 
+    border-bottom: 1.5px inset rgb(165, 224, 1) ;
+    width:120px;
+    height:43px;
+    padding:10px;
+    background-color: rgb(255, 0, 0);
+    list-style: none;  
+    color:rgb(255, 255, 255)
+    
+    }
+
+
+li:hover{
+    width:120px;
+    height:43px;
+    padding:12px;
+    background: rgb(0, 199, 90);
+}
+
+a{
+    color:#fff;
+    text-decoration: none;
+    }
+
+
+.flex-row-container{
+    display: flex;
+    align-items:center;
+    gap:15px;
+    justify-content: space-between;
+
+
+}
+
+.content{
+    min-height: 780px;
+    width:100vw;
+    padding:20px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.cards-wrapper{
+
+    display: flex;
+    flex-direction: row;
+}
+
+.cards img {
+    width:200px;
+    height: 280px;
+
+}
+
+.cards img:hover{
+
+    padding:3px;    
+    background-color: red;
+
+}
+
+
+.navigation{
+    padding:20px;
+    font-size:25px; 
+    color:rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    gap:5px;
+    align-items:center;
+    display:flex;
+    flex-direction: row;
+}
+
+footer{
+    border-top: 3px solid orangered;
+    background-color: rgb(0, 0, 0);
+    width:  100vw;
+    padding:22px;
+}
+
