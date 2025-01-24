@@ -1,0 +1,818 @@
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(/assets/fonts/Gilroy-Bold.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Regular;
+    src: url(/assets/fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url(/assets/fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url(/assets/fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+@font-face {
+    font-family: Abel;
+    src: url(/assets/fonts/Abel-Regular.ttf);
+}
+
+/* resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button,
+input {
+    border: none;
+    background-color: transparent;
+}
+
+/* resets end */
+.d-none{
+    display: none;
+}
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px;
+    align-items: center;
+}
+
+header nav > ul {
+    display: flex;
+    gap: 65px;
+}
+header nav > ul > li:first-child{
+    position:relative;
+}
+header nav > ul > li:first-child > ul{
+    padding:15px;
+    width: 100px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    position: absolute;
+    top:30px;
+    right:0;
+    background-color: #000;
+}
+header nav > ul > li:first-child > ul li:not(:last-child){
+    margin-bottom:10px;
+}
+
+header nav ul a {
+    font-size: 18px;
+    font-family: Gilroy-Medium;
+    line-height: 21px;
+    text-transform: capitalize;
+}
+
+.header-wrapper {
+    background-image: url(../images/header-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1084px;
+}
+
+.cta-wrapper {
+    position: relative;
+
+}
+
+.cart-counter {
+    color: #fff;
+    width: 20px;
+    height: 25px;
+    border-radius: 44px;
+    top: 0;
+    right: -5px;
+    ;
+    position: absolute;
+    background-color: #E58411;
+    align-content: center;
+
+}
+
+.logo-wrapper a {
+    font-size: 28px;
+    line-height: 32px;
+    font-family: Gilroy-Bold;
+
+}
+
+.welcome-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-content {}
+
+.welcome-content h1 {
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    width: 900px;
+    font-size: 80px;
+    font-family: Gilroy-Bold;
+    line-height: 104px;
+}
+
+.welcome-content p {
+    margin: 0 auto;
+    width: 606px;
+    text-align: center;
+    font-family: Gilroy-Regular;
+    font-size: 24px;
+    line-height: 38.4px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.search-wrapper {
+    position: relative;
+    margin-top: 45px;
+    display: flex;
+}
+
+.search-wrapper input {
+    color: #FFFFFF;
+    padding: 15px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, .6);
+    border-radius: 42px;
+    backdrop-filter: blur(8px);
+    width: 344px;
+    height: 56px;
+
+}
+
+.search-wrapper input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.search-wrapper-icon {
+    top: 1px;
+    left: 1.5px;
+
+}
+
+.search-wrapper-icon-frame {
+    padding: 11px;
+    align-self: center;
+    border-radius: 24px;
+    position: absolute;
+    right: 6px;
+    width: 40px;
+    height: 40px;
+    background-color: #E58411;
+}
+
+/* header end */
+
+/* about-us-wrapper  */
+.about-us-wrapper {
+    padding: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.about-wrapper {
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+
+}
+
+.message {
+    width: 242px;
+    left: 0;
+    opacity: 0px;
+
+}
+
+.message h1 {
+    font-family: Gilroy-Bold;
+    font-size: 42px;
+    line-height: 49.22px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.luxury {
+    width: 284px;
+}
+
+.luxury h2 {
+    color: #1E1E1E;
+    height: 30px;
+    opacity: 0.9px;
+    text-transform: capitalize;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    line-height: 28px;
+
+}
+
+.luxury p {
+    width: 284px;
+    height: 90px;
+    gap: 0px;
+    opacity: 0.8px;
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    line-height: 29.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #1E1E1E;
+}
+
+.luxury a {
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    line-height: 25.9px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #E58411;
+
+}
+
+/* about us end */
+
+/* sell-section */
+.sell-wrapper {
+    background-color: #F7F7F7;
+    height: 910px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sell-title {
+    font-family: Gilroy-Bold;
+    font-size: 42px;
+    line-height: 49px;
+}
+
+.sc_tabs {
+    display: flex;
+    background-color: #EEEEEE;
+    width: 348px;
+    height: 57px;
+    padding: 6px;
+    opacity: 0px;
+    border-radius: 44px;
+}
+
+.sc_tabs span {
+    text-align: center;
+    width: 84px;
+    height: 45px;
+    padding: 4px;
+    gap: 10px;
+    border-radius: 32px;
+    opacity: 0px;
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 33px;
+}
+
+.sc_tabs .default-tab {
+    background-color: #FFFFFF;
+    width: 84px;
+    height: 45px;
+}
+
+.cards-section {
+    text-transform: capitalize;
+    width: 1200px;
+    height: 492px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 68px;
+
+}
+
+.card-container {
+    background-color: #fff;
+    width: 268px;
+    height: 441px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.card-img {
+    background-color: #FAFAFA;
+    width: 217px;
+    height: 255px;
+    top: 17px;
+    left: 14px;
+}
+
+.card-img img {
+    position: absolute;
+    margin-top: -50px;
+    width: 217px;
+    height: 255px;
+
+}
+
+.about-card {
+    display: flex;
+    background-color: #FFFFFF;
+}
+
+.about-c {
+
+    height: 76.16px;
+}
+
+.about-c span {
+    gap: 60px;
+    font-family: Inter;
+    font-size: 16.76px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #8D8D8D;
+}
+
+.shop {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-radius: 21px;
+    width: 200px;
+    height: 82px;
+    padding: 0 0 0 15px;
+}
+
+.shop .num {
+    color: #0D1B39;
+    font-family: Inter;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.shop b {
+    position: absolute;
+    margin-top: -3px;
+    margin-left: -13px;
+    font-family: Inter;
+    font-size: 15.23px;
+    font-weight: 600;
+    line-height: 18.43px;
+}
+
+.card-nav {
+    position: relative;
+
+}
+
+.left-arrow {
+    margin-top: -50px;
+    align-self: center;
+    left: -70px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    border-radius: 26.09px;
+    opacity: 0px;
+}
+
+.right-arrow {
+    margin-top: -50px;
+    align-self: center;
+    position: absolute;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    border-radius: 26.09px;
+    opacity: 0px;
+
+}
+
+.shop button {
+    width: 48px;
+    height: 48px;
+    padding: 12;
+    gap: 15.23px;
+    border-radius: 31px;
+    opacity: 0px;
+
+}
+
+/* sell section end */
+
+/* experience wrapper */
+.exp-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 240px;
+
+}
+
+.exp-img {
+    width: 529px;
+    height: 445px;
+    left: -27px;
+    border-radius: 20px 0px 0px 0px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 45px 40px 50px 0px #a15a0374;
+
+}
+
+.exp-img::before {
+    content: '';
+    position: absolute;
+    margin-top: -60px;
+    width: 430px;
+    height: 66px;
+    border-radius: 20px;
+    background-color: #F7F7F7;
+    z-index: -1;
+}
+
+.exp-img::after {
+    content: '';
+    position: absolute;
+    top: 72px;
+    right: -135px;
+    width: 61px;
+    height: 301px;
+    border-radius: 20px;
+    background-color: #F7F7F7;
+    z-index: -1;
+
+}
+
+.about-exp {
+    margin-right: 141px;
+    ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-exp h5 {
+    margin-bottom: 20px;
+    width: 143px;
+    height: 22px;
+    color: #E58411;
+    font-family: Gilroy-SemiBold;
+    font-size: 18px;
+    line-height: 21.09px;
+    letter-spacing: 0.175em;
+    color: #E58411;
+
+}
+
+.about-exp h2 {
+    width: 413px;
+    height: 104px;
+    font-family: Gilroy-Bold;
+    font-size: 42px;
+    line-height: 49.22px;
+}
+
+.about-exp p {
+    width: 556px;
+    height: 132px;
+    opacity: 0.8;
+    font-family: Gilroy-Regular;
+    font-size: 18px;
+    line-height: 33.3px;
+    color: #1E1E1E;
+}
+
+.about-exp a {
+    width: 121px;
+    height: 26px;
+    color: #E58411;
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.about-exp svg {
+    margin-left: 13px;
+}
+
+/* exp wrapper end */
+
+/* materials */
+.materials-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+.materials-wrapper::after{
+    content: '';
+    background-color: #F7F7F7;
+    width: 395px;
+    height: 66px;
+    position:absolute;
+    right: -0px;
+    top:-60px;
+    z-index: -1;
+    border-radius: 20px;
+    transform: rotate(-180 deg);
+
+    
+}
+.about-materials{
+    margin-left: 80px;
+}
+.about-materials h5 {
+    font-family: Gilroy-SemiBold;
+    font-size: 18px;
+    line-height: 21.09px;
+    letter-spacing: 0.175em;
+    width: 117px;
+    height: 22px;
+    color: #E58411
+}
+
+.about-materials h2 {
+    width: 435px;
+    font-family: Gilroy-Bold;
+    font-size: 42px;
+    line-height: 49.22px;
+    color: #1E1E1E;
+    text-transform: capitalize;
+}
+
+.about-materials p {
+    width: 556px;
+    opacity: 0.8;
+    font-family: Gilroy-Regular;
+    font-size: 18px;
+    line-height: 33.3px;
+    color: #1E1E1E;
+}
+.about-materials a {
+    width: 121px;
+    height: 26px;
+    color: #E58411;
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.about-materials svg {
+    margin-left: 13px;
+}
+
+.materials-img {
+    overflow: hidden;
+    display: grid;
+    grid-template-areas:
+        "item1 item1  . . "
+        "item1 item1 item3 item3"
+        "item2 item2 item3 item3"
+        "item2 item2 item3 item3"
+        "item2 item2 item3 item3";
+    position: absolute;
+    right: -0px;
+}
+
+.materials-img img:nth-child(1){
+    grid-area: item1;
+    width: 223px;
+    height: 229px;
+}
+.materials-img img:nth-child(2){
+    grid-area: item2;
+    width: 223px;
+    height: 317px;
+    
+}
+.materials-img img:nth-child(3){
+    grid-area: item3;
+    width: 629px;
+    height: 445px;
+    border-radius: 20px;
+    width: fit-content;
+    box-shadow: 0px 0px 0px 0px #E58411;
+}
+/* materials end */
+/* testimonials  */
+.testimonials-wrapper{
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:60px;
+}
+.testimonials-title{
+    width: 413px;
+    height: 94px;
+    text-align: center;
+}
+.testimonials-title h3{
+    font-family: Gilroy-SemiBold;
+    font-size: 18px;
+    line-height: 21.09px;
+    letter-spacing: 0.175em;
+    color: rgba(229,132,17,1)
+}
+.testimonials-title h2{
+    margin-top: 20px;
+    font-family: Gilroy-Bold;
+    font-size: 42px;
+    line-height: 49.22px;
+}
+.ts-card-container{
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+.ts-card{
+    background-size: cover;
+    width: 370px;
+    height: 502.42px;
+    position:relative;
+    border-radius: 18px;
+}
+.ts-bg-1{
+    background-image: url(/assets/images/ts-image1.jpeg);
+}
+.ts-bg-2{
+    background-image: url(/assets/images/ts-image2.jpeg);
+}
+.ts-bg-3{
+    background-image: url(/assets/images/ts-image3.jpeg);
+}
+.ts-about-card{
+    position:absolute;
+    bottom: 48px;
+    left: 13px;
+    background-color: #fff;
+    width: 334px;
+    height: 206px;
+    border-radius: 18.12px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ts-img-box{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    position:relative;
+    top: -50px;
+    z-index: 1;
+}
+
+.ts-about-card img{
+
+
+    z-index: 1;
+    position: absolute;
+    left: 25px;
+    top: 20px;
+}
+.ts-card-title{
+    width: 86px;
+    height: 43px;
+    margin-left: 50px;
+}
+.ts-about-card h2{
+    width: 90px;
+    font-family: Abel;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.94px;
+    color: #1E1E1E;
+}
+.ts-about-card h3{
+    margin-top: 5px;
+    width: 140px;
+    height: 14px;
+    opacity: 0.6px;
+    font-family: Gilroy-Regular;
+    font-size: 12px;
+    line-height: 14.06px;
+}
+.ts-about-card p{
+    margin-top:21px;
+    width: 252px;
+    height: 36px;
+    opacity: 0.8;
+    font-family: Abel;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.84px;
+}
+.card-move{
+    margin-top: -50px;
+    margin-left: 50px;
+}
+/* testimonials end */
+
+/* footer start */
+footer{
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: space-evenly;
+    height: 462px;
+    align-items: center;
+}
+.footer-logo-wrapper{
+    width: 293px;
+    height: 146px;
+}
+.footer-logo-wrapper a{
+    font-family: Gilroy-Bold;
+    font-size: 28px;
+    line-height: 32.81px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #1e1e1e;    
+}
+
+.footer-logo-wrapper p{
+    margin-top: 29px;
+    opacity: 0.8;
+    font-family: Gilroy-Medium;
+    font-size: 15px;
+    line-height: 24px;
+    color: #1E1E1E;
+}
+footer nav{
+    display: flex;
+    gap:60px;
+    height: 146px;
+    text-transform: capitalize;
+}
+footer .footer-nav ul li:not(:first-child){
+    font-family: Gilroy-Medium;
+    font-size: 15px;
+    line-height: 24px;
+    }
+.orli{
+    font-family: DM Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22.13px;
+    letter-spacing: -0.23181818425655365px;
+    color: #F6973F;
+
+}
+.footer-end{
+    height: 24px;  
+    display: flex; 
+    justify-content: space-between;
+}
+.footer-end span{
+    font-family: Gilroy-Medium;
+    font-size: 15px;
+    line-height: 24px;
+    opacity: 0.8;
+    
+    
+
+}
