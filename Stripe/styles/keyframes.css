@@ -1,0 +1,54 @@
+@keyframes changecolor {
+    5% {
+        filter: hue-rotate(10deg)
+    }
+    10% {
+        filter: hue-rotate(15deg)
+    }
+    15% {
+        filter: hue-rotate(20deg)
+    }
+    20% {
+        filter: hue-rotate(25deg)
+    }
+    25% {
+        filter: hue-rotate(30deg)
+    }
+    30% {
+        filter: hue-rotate(30deg)
+    }
+    35% {
+        filter: hue-rotate(35deg)
+    }
+    40% {
+        filter: hue-rotate(40deg)
+    }
+    45% {
+        filter: hue-rotate(45deg)
+    }
+    50% {
+        filter: hue-rotate(50deg)
+    }
+    55% {
+        filter: hue-rotate(55deg)
+    }
+    60% {
+        filter: hue-rotate(60deg)
+    }
+    65% {
+        filter: hue-rotate(65deg)
+    }
+    70% {
+        filter: hue-rotate(70deg)
+    }
+    80% {
+        filter: hue-rotate(80deg)
+    }
+    90% {
+        filter: hue-rotate(90deg)
+    }
+    100% {
+        filter: hue-rotate(100deg)
+    }
+
+}
